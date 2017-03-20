@@ -1,0 +1,13 @@
+{
+  "baseUrl": "/",
+  "pages": [
+    {
+      "src": "index.md",
+      "title": "Hello World"
+    }
+  ],
+  "ignore": [
+    "_site/*",
+    "*.md"
+  ]
+}
