@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="markbind/css/bootstrap.min.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+    <h1 id="hello-world">Hello world</h1>
+
+<p>Welcome to your page generated with MarkBind.</p>
+</div>
+</body>
+<script src="markbind/js/vue.min.js"></script>
+<script src="markbind/js/vue-strap.min.js"></script>
+<script type="text/javascript">
+  Vue.directive('closeable', VueStrap.closeable);
+  var vm = new Vue({
+    components: {
+      affix: VueStrap.affix,
+      accordion: VueStrap.accordion,
+      panel: VueStrap.panel,
+      navbar: VueStrap.navbar,
+      popover: VueStrap.popover,
+      modal: VueStrap.modal,
+      tabs: VueStrap.tabset,
+      tab: VueStrap.tab,
+      tooltip: VueStrap.tooltip,
+      dynamicPanel: VueStrap.dynamicPanel,
+      morph: VueStrap.morph,
+      question: VueStrap.question,
+      tipBox: VueStrap.tipBox,
+      pic: VueStrap.pic,
+    },
+    el: "#app"
+  });
+  vm.$on('retriever:fetched', function (el) {
+    vm.$compile(el);
+  });
+</script>
+</html>
