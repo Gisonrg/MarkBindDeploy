@@ -9,5 +9,7 @@
   "ignore": [
     "_site/*",
     "*.md"
-  ]
+  ],
+  "deploy": {
+  }
 }
