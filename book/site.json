@@ -1,5 +1,5 @@
 {
-  "baseUrl": "",
+  "baseUrl": "/Gisonrg/MarkBindDeploy/book",
   "pages": [
     {
       "src": "index.md",
@@ -139,6 +139,8 @@
     "site.json"
   ],
   "deploy": {
-    "message": "Site Update."
+    "message": "Site Update.",
+    "repo": "git@github.com:Gisonrg/MarkBindDeploy.git",
+    "branch": "book"
   }
 }

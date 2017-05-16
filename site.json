@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/site-demo-cs2103",
+  "baseUrl": "/Gisonrg/MarkBindDeploy/gh-pages",
   "pages": [
     {
       "src": "index.md",
@@ -153,5 +153,10 @@
     "README.md",
     "contents/handbook/*",
     "*.md"
-  ]
+  ],
+  "deploy": {
+    "message": "Site Update.",
+    "repo": "git@github.com:Gisonrg/MarkBindDeploy.git",
+    "branch": "gh-pages"
+  }
 }
