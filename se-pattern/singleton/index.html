@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="app" class="container-fluid">
-    <link rel="stylesheet" href="/Gisonrg/MarkBindDeploy/book//css/textbook.css">
+    <link rel="stylesheet" href="/Gisonrg/MarkBindDeploy/book/css/textbook.css">
 <div class="website-content" id="main">
   <h3 id="singleton-pattern">Singleton Pattern</h3>
   <div class="pull-right" v-closeable="" alt="Read lecture slides online"><iframe src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212074&authkey=&em=2&wdAr=1.3333333333333333" width="350px" height="286px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe></div>
@@ -26,7 +26,7 @@
     <h4 id="solution">Solution</h4>
     <tabs>
       <tab header=":ab:">
-        <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/Gisonrg/MarkBindDeploy/book//se-pattern/singleton/solution.png">
+        <p>Make the <em>constructor</em> of the singleton class <code>private</code>. Provide a <code>public</code> method to access the <em>singleton</em> instance.</p><img class="center-block" src="/Gisonrg/MarkBindDeploy/book/se-pattern/singleton/solution.png">
         <p>As shown, the solution makes the constructor private (note the “-“ visibility marker for the constructor), which prevents instantiation from outside the class. The single instance of the singleton class is maintained by a private class-level variable.
           Access to this object is provided by a public class-level operation <code>getInstance()</code>. In the skeleton code above, <code>getInstance()</code> instantiates a single copy of the singleton class when it is executed for the first time.
           Subsequent calls to this operation return the single instance of the class.</p>
@@ -89,16 +89,16 @@
             <panel header="Question 1" minimized="">
               <question>
                 <p>Which of the following is an ideal situation for using Singleton pattern?</p>
-                <ul radio-group="nbee1" class="radio-list">
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="nbee1" type="radio"> Utility methods used by many class in the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="nbee1" type="radio"> A database manager shared by different component of the application.</label></li>
-                  <li class="radio-list-item"><label><input class="radio-list-input" name="nbee1" type="radio"> A constant String defined in every controller.</label></li>
+                <ul radio-group="4yjn9" class="radio-list">
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="4yjn9" type="radio"> Utility methods used by many class in the application.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="4yjn9" type="radio"> A database manager shared by different component of the application.</label></li>
+                  <li class="radio-list-item"><label><input class="radio-list-input" name="4yjn9" type="radio"> A constant String defined in every controller.</label></li>
                 </ul>
                 <div slot="answer">
-                  <ul radio-group="zu9o1" class="radio-list">
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="zu9o1" type="radio"> Utility methods used by many class in the application.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="zu9o1" type="radio"> Database manager shared by different component of the application.</label></li>
-                    <li class="radio-list-item"><label><input class="radio-list-input" name="zu9o1" type="radio"> A constant String defined in every controller.</label></li>
+                  <ul radio-group="9v02s" class="radio-list">
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="9v02s" type="radio"> Utility methods used by many class in the application.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" checked name="9v02s" type="radio"> Database manager shared by different component of the application.</label></li>
+                    <li class="radio-list-item"><label><input class="radio-list-input" name="9v02s" type="radio"> A constant String defined in every controller.</label></li>
                   </ul>
                   <p>Database is a shared resources here, and by using singleton pattern, we have better control over the database operations.</p>
                 </div>
