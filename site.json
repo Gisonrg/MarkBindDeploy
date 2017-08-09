@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/website",
+  "baseUrl": "/MarkBindDeploy",
   "ignore": [
     "_site/*",
     ".idea/*",
@@ -2280,5 +2280,10 @@
       "src": "book/oopDesign/faq/index.md",
       "title": "CS2103/T Textbook - Object Oriented Programming: FAQ"
     }
-  ]
+  ],
+  "deploy": {
+    "message": "Site Update.",
+    "repo": "https://github.com/Gisonrg/MarkBindDeploy",
+    "branch": "gh-pages"
+  }
 }
